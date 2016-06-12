@@ -1,0 +1,38 @@
+body {
+  background-image: url('images/marvelback.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #691107;
+}
+
+select {
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  /*padding-top: 120px;*/
+}
+.thumb {
+  padding-left: 600px;
+  padding-top: 255px;
+  /*display: inline-block;
+  margin: 0 auto;*/
+}
+
+.bio {
+  padding-top: 125px;
+  text-align: center;
+}
+
+p {
+  color: #eeebd8;
+  /*text-decoration: underline overline;*/
+  border-bottom-style: solid
+}
+
+.pie {
+  background-color: #691107;
+}
