@@ -2,7 +2,7 @@ window.onload = function(){
   var PRIV_KEY = "2c8d5833e87dc4cbd8548681f5b17e317150f69e";
   var API_KEY = "bf6dd07d4882ac98e389863aafd0ac0c";
   var ts = new Date().getTime();
-  var url = "http://gateway.marvel.com/v1/public/characters?apikey=" + API_KEY;
+  var url = "http://gateway.marvel.com/v1/public/characters?offset=285&apikey=" + API_KEY;
   var hash = md5(ts + PRIV_KEY + API_KEY);
   url += "&ts="+ts+"&hash="+hash;
   var request = new XMLHttpRequest();
@@ -86,7 +86,7 @@ var PieChart = function(characters) {
     series: [
       {
         name: "appearance",
-        data: characters    
+        data: characters
       }
     ]
   })
